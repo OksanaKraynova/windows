@@ -1,0 +1,130 @@
+.footer {
+  background: #030d15;
+  color: #fff;
+  padding: 75px 0px 56px 0px;
+}
+
+@media (max-width: 1139px) {
+  .footer {
+    padding: 75px 10px 56px 10px;
+  }
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 859px) {
+  .footer__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 22px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer__column {
+  padding: 0 20px;
+}
+
+.footer__column p {
+  max-width: 261px;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+
+.footer__column-main {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1px;
+          order: 1px;
+}
+
+@media (max-width: 859px) {
+  .footer__column-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.footer__title {
+  margin-bottom: 26px;
+}
+
+.footer__item + .footer__item {
+  margin-top: 15px;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.footer__shop-link {
+  font-weight: 500;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 14px 0px 16px 0px;
+  line-height: 23px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social a + a {
+  margin-left: 25px;
+}
+
+.footer__languege {
+  margin-top: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__languege img {
+  margin-right: 10px;
+}
+
+.footer__languege span {
+  padding-right: 16px;
+  position: relative;
+}
+
+.footer__languege span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  top: 3px;
+  right: 0;
+  background: url(../img/footer/arrow.svg);
+}
+/*# sourceMappingURL=footer.css.map */

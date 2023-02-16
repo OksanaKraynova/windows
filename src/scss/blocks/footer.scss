@@ -1,0 +1,49 @@
+.footer {
+padding: 40px 0;
+@media(max-width: 1199px){
+    padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+        padding-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+}
+&__container{
+    display: flex;
+    align-items: center;
+    @media(max-width: 399px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+}
+&__fake{
+    flex: 0 1 360px;
+    @media(max-width: 599px){
+        display: none;
+    }
+}
+    &__logo {
+        flex: 1 1 auto;
+        text-align: center;
+        @media(max-width: 399px){
+            order: 2;
+        }
+    }
+
+    &__contacts {
+        flex: 0 1 360px;
+        display: flex;flex-direction: column;
+        text-align: right;
+        @media(max-width: 399px){
+            text-align: center;
+            order: 1;
+        }
+    }
+    &__tel{
+        color: #333333;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__email{
+        margin-top: 5px;
+        color: #0089cd;
+        text-decoration: underline;
+    }
+}

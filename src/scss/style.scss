@@ -1,0 +1,35 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.blue-link {
+    color: #0089cd;
+    text-decoration: underline;
+}
+
+.title-main {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    @media (max-width: 1199px) {
+        font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+.line {
+    margin-top: 40px;
+    @media (max-width: 1199px) {
+        margin-top: calc(18px + (40 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+}
+.status{
+    color: green;
+    text-align: center;
+
+}

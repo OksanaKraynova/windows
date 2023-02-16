@@ -1,0 +1,95 @@
+.promo {
+    padding: 60px 0;
+    background: url(../../img/main/bg.png) top left / cover no-repeat;
+    @media (max-width: 1199px) {
+        padding-top: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320)));
+        padding-bottom: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media (max-width: 874px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+    }
+
+    &__form {
+    }
+}
+.container {
+}
+.content-promo {
+    margin-top: 10px;
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        @media (max-width: 1199px) {
+            font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1200 - 320)));
+        }
+        @media (max-width: 874px) {
+            text-align: center;
+        }
+
+        span {
+            margin-top: 24px;
+            display: inline-flex;
+            font-size: 55px;
+            @media (max-width: 1199px) {
+                font-size: calc(30px + (55 - 30) * ((100vw - 320px) / (1200 - 320)));
+                margin-top: calc(12px + (24 - 12) * ((100vw - 320px) / (1200 - 320)));
+            }
+        }
+    }
+
+    &__advantages {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 30px;
+
+        @media (max-width: 998px) {
+            margin-top: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 - 320)));
+            gap: calc(12px + (30 - 12) * ((100vw - 320px) / (1200 - 320)));
+        }
+        @media (max-width: 874px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        span {
+            color: #fff;
+            font-weight: 700;
+            font-size: 13px;
+
+            position: absolute;
+            text-align: center;
+            top: 55%;
+            max-width: 70px;
+            text-transform: uppercase;
+            line-height: 1.3;
+            // left: 20%;
+        }
+    }
+}
+.form-promo {
+    &__title {
+    }
+
+    &__input {
+    }
+
+    &__btn {
+    }
+}

@@ -1,0 +1,111 @@
+.sale {
+    padding: 80px 0;
+    background: url(../../img/sale/bg.jpg) center center / cover no-repeat;
+    @media (max-width: 1199px) {
+        padding-top: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 - 320)));
+        padding-bottom: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 - 320)));
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media (max-width: 809px) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__promo {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 809px) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        color: #0089cd;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media (max-width: 1199px) {
+            font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+    &__p {
+        margin: 80px 0;
+        font-size: 24px;
+        max-width: 450px;
+        line-height: 1.4;
+        @media (max-width: 998px) {
+            font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1200 - 320)));
+            margin-top: calc(10px + (80 - 10) * ((100vw - 320px) / (1200 - 320)));
+            margin-bottom: calc(10px + (80 - 10) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+}
+
+.timer-sale {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #575757;
+    border-radius: 10px;
+    text-align: center;
+    width: 360px;
+    height: 150px;
+    @media (max-width: 389px) {
+        padding: 0;
+        width: 290px;
+        max-height: 150px;
+    }
+    &__title {
+        font-size: 18px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        @media (max-width: 1199px) {
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+
+    &__block {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    &__item {
+    }
+
+    &__number {
+        background-color: #575757;
+        border-radius: 7px;
+        padding: 4px;
+        span {
+            font-size: 40px;
+            color: #fff;
+            line-height: 1.3;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}
+.sale .form-promo {
+    @media (max-width: 899px) {
+        flex: 1 1 auto;
+    }
+    &__title {
+    }
+
+    &__input {
+    }
+
+    &__btn {
+    }
+}

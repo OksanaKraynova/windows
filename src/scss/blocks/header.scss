@@ -1,0 +1,118 @@
+@import "../mixins.scss";
+
+.header {
+    padding: 20px 0;
+    color: #333333;
+    @media (max-width: 1199px) {
+        padding-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+        padding-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+    }
+    &__container {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1199px) {
+            gap: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+
+    &__column {
+        display: flex;
+    }
+    &__logo-column {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 20px;
+    }
+
+    &__logo-text {
+        max-width: 295px;
+        color: $blue;
+        @media (max-width: 449px) {
+            display: none;
+        }
+    }
+
+    &__enginer {
+        display: flex;
+        align-items: center;
+        max-width: 160px;
+        border: 1px solid #55a832;
+        border-radius: 10px;
+        padding: 10px;
+        span {
+            text-transform: uppercase;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #55a832;
+        }
+    }
+    &__menu {
+        display: flex;
+        gap: calc(10px + (30 - 10) * ((100vw - 320px) / (1200 - 320)));
+        align-items: center;
+        @media (max-width: 1049px) {
+            position: fixed;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 320px;
+            width: 100%;
+            right: -100%;
+            top: 70px;
+            padding: 0px 0px 0px 30px;
+
+            height: 100%;
+            background-color: #fff;
+            z-index: 3;
+            transition: all 0.5s ease;
+
+            &.active {
+                right: 0;
+            }
+        }
+    }
+
+    &__clock {
+        display: flex;
+        align-items: center;
+    }
+
+    &__clock-img {
+        margin-right: 20px;
+        @media (max-width: 1199px) {
+            margin-right: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+
+    &__time {
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+    }
+    &__phone {
+        align-items: center;
+        display: flex;
+        color: #333333;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        @media (max-width: 1199px) {
+            font-size: calc(16px + (23 - 16) * ((100vw - 320px) / (1200 - 320)));
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+    }
+}
